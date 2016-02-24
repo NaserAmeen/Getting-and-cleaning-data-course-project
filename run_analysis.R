@@ -66,5 +66,5 @@ tidy_summary <- messy %>% gather("measurement","value",-c(subject_id,activity)) 
                 summarise(mean_measure = mean(value)) %>%
                 print
 
-#write summary to file
-write.csv(tidy_summary,"summaryData.csv")
+#write summary to txt file
+write.table(tidy_summary, "summaryData.txt", row.names = FALSE, quote = FALSE)
