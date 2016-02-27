@@ -38,9 +38,21 @@ The next step in creating the tidy data involves, summarizing the data.  The `ti
                 summarise(mean_measure = mean(value)) %>%
                 print
 
-Finally, the data is written to the output file `summaryData.txt`, which is attached to this repo.   
+Finally, the data is written to the output file `summaryData.txt`, which is attached to this repo. The header and some lines of the file are presented below:
  
+     subject_id activity                        measurement mean_measure
+        (int)   (fctr)                              (chr)        (dbl)
+           1   LAYING  angletBodyAccJerkMean_gravityMean  0.003060407
+           1   LAYING          angletBodyAccMean_gravity  0.021365966
+           1   LAYING angletBodyGyroJerkMean_gravityMean  0.084437165
+           1   LAYING     angletBodyGyroMean_gravityMean -0.001666985
+           1   LAYING                 angleX_gravityMean  0.426706226
+           1   LAYING                 angleY_gravityMean -0.520343818
+           1   LAYING                 angleZ_gravityMean -0.352413109
+           1   LAYING                    fBodyAcc_mean_X -0.939099052
+           1   LAYING                    fBodyAcc_mean_Y -0.867065205
+           1   LAYING                    fBodyAcc_mean_Z -0.882666876
 
-
+There are 30 unique subjects, and each subject are measured performing 6 activites: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LAYING.  For each activity 86 unique measurements are taken.  
  
  
