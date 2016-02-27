@@ -23,4 +23,18 @@ The raw files are automatically downloaded into R's current working directory wh
 - `test/X_test.txt`: Test set.
 - `test/y_test.txt`: Test labels.
 
-The most important files that `run_analysis.R` uses in transforming the 
+### Transformations
+The  `run_analysis.R` creates a file called `test_train_merged.csv` (not included as part of this repo, but available when the script is executed). The `test_train_merged.csv` file merges the `test` and `train` data into one data set using tidy data principles shown below:
+- Each type of observation unit forms a table.  Here we create a table containing `subject_id`, `activity`, `mean` and `std` variables from the raw data. Thus for each subject, and each activity a set of `mean` and `std` sampled at different frequencies are gathered.
+- Descriptive names are applied to `activity` column using the keys and values available from the `activity_labels_txt` file.
+- Each variable forms a column.  The `run_analysis.R` script ensures that duplicate variables are eliminated.
+- Next, descriptive names are applied to each variable where the names are obtained from the `features.txt`.
+- Each observation forms a row.
+
+The 
+
+ 
+
+
+ 
+ 
