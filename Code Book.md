@@ -31,7 +31,7 @@ The  `run_analysis.R` creates a file called `test_train_merged.csv` (not include
 - Next, descriptive names are applied to each variable where the names are obtained from the `features.txt`.
 - Each observation forms a row.
 
-The next step in creating the tidy data involves, summarizing the data.  The `tidyr` library is used to convert the `test_train_merged.csv` from _wide_ format to _long_ format.
+The next step in creating the tidy data involves, summarizing the data.  The `tidyr` library is used to convert the `test_train_merged.csv` from _wide_ format to _long_ format.  The `tidyr` library is used to create a grouping of all the `mean` and `std` measurements by `subject_id` and `activity`. 
 
  
 
