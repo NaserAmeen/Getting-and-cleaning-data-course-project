@@ -38,7 +38,7 @@ The next step in creating the tidy data involves, summarizing the data.  The `ti
                 summarise(mean_measure = mean(value)) %>%
                 print
 
- 
+Finally, the data is written to the output file `summaryData.txt`, which is attached to this repo.   
  
 
 
