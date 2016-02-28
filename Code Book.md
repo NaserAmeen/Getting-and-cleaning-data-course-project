@@ -53,6 +53,103 @@ Finally, the data is written to the output file `summaryData.txt`, which is atta
            1   LAYING                    fBodyAcc_mean_Y -0.867065205
            1   LAYING                    fBodyAcc_mean_Z -0.882666876
 
-There are 30 unique subjects, and each subject are measured performing 6 activites: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LAYING.  For each activity 86 unique measurements are taken.  
+There are 30 unique subjects, and each subject are measured performing 6 activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LAYING.  For each activity 86 unique measurements are taken.  The activities and their units are shown in the table below:
+
+Measurement | Unit
+------------|-----
+angletBodyAccJerkMean_gravityMean | g
+angletBodyAccMean_gravity | g
+angletBodyGyroJerkMean_gravityMean | rad/sec
+angletBodyGyroMean_gravityMean | rad/sec
+angleX_gravityMean | rad/sec
+angleY_gravityMean | rad/sec
+angleZ_gravityMean | rad/sec
+fBodyAcc_mean_X | g
+fBodyAcc_mean_Y | g
+fBodyAcc_mean_Z | g
+fBodyAcc_meanFreq_X | g
+fBodyAcc_meanFreq_Y | g
+fBodyAcc_meanFreq_Z | g
+fBodyAcc_std_X | g
+fBodyAcc_std_Y | g
+fBodyAcc_std_Z | g
+fBodyAccJerk_mean_X | g
+fBodyAccJerk_mean_Y | g
+fBodyAccJerk_mean_Z | g
+fBodyAccJerk_meanFreq_X | g
+fBodyAccJerk_meanFreq_Y | g
+fBodyAccJerk_meanFreq_Z | g
+fBodyAccJerk_std_X | g
+fBodyAccJerk_std_Y | g
+fBodyAccJerk_std_Z | g
+fBodyAccMag_mean | g
+fBodyAccMag_meanFreq | g
+fBodyAccMag_std | g
+fBodyBodyAccJerkMag_mean | g
+fBodyBodyAccJerkMag_meanFreq | g
+fBodyBodyAccJerkMag_std | g
+fBodyBodyGyroJerkMag_mean | rad/sec
+fBodyBodyGyroJerkMag_meanFreq | rad/sec
+fBodyBodyGyroJerkMag_std | rad/sec
+fBodyBodyGyroMag_mean | rad/sec
+fBodyBodyGyroMag_meanFreq | rad/sec
+fBodyBodyGyroMag_std | rad/sec
+fBodyGyro_mean_X | rad/sec
+fBodyGyro_mean_Y | rad/sec
+fBodyGyro_mean_Z | rad/sec
+fBodyGyro_meanFreq_X | rad/sec
+fBodyGyro_meanFreq_Y | rad/sec
+fBodyGyro_meanFreq_Z | rad/sec
+fBodyGyro_std_X | rad/sec
+fBodyGyro_std_Y | rad/sec
+fBodyGyro_std_Z | rad/sec
+tBodyAcc_mean_X | g
+tBodyAcc_mean_Y | g
+tBodyAcc_mean_Z | g
+tBodyAcc_std_X | g
+tBodyAcc_std_Y | g
+tBodyAcc_std_Z | g
+tBodyAccJerk_mean_X | g
+tBodyAccJerk_mean_Y | g
+tBodyAccJerk_mean_Z | g
+tBodyAccJerk_std_X | g
+tBodyAccJerk_std_Y | g
+tBodyAccJerk_std_Z | g
+tBodyAccJerkMag_mean | g
+tBodyAccJerkMag_std | g
+tBodyAccMag_mean | g
+tBodyAccMag_std | g
+tBodyGyro_mean_X | rad/sec
+tBodyGyro_mean_Y | rad/sec
+tBodyGyro_mean_Z | rad/sec
+tBodyGyro_std_X | rad/sec
+tBodyGyro_std_Y | rad/sec
+tBodyGyro_std_Z | rad/sec
+tBodyGyroJerk_mean_X | rad/sec
+tBodyGyroJerk_mean_Y | rad/sec
+tBodyGyroJerk_mean_Z | rad/sec
+tBodyGyroJerk_std_X | rad/sec
+tBodyGyroJerk_std_Y | rad/sec
+tBodyGyroJerk_std_Z | rad/sec
+tBodyGyroJerkMag_mean | rad/sec
+tBodyGyroJerkMag_std | rad/sec
+tBodyGyroMag_mean | rad/sec
+tBodyGyroMag_std | rad/sec
+tGravityAcc_mean_X | g
+tGravityAcc_mean_Y | g
+tGravityAcc_mean_Z | g
+tGravityAcc_std_X | g
+tGravityAcc_std_Y | g
+tGravityAcc_std_Z | g
+tGravityAccMag_mean | g
+tGravityAccMag_std | g
+_Note that g is gravitational accleration, and its unit is m/sec^2_
+
+The `summaryData.txt` is tidy because:
+* There is one variable per column
+* There is one observation per row
+* Each type of observation unit forms a table
+
+
  
  
